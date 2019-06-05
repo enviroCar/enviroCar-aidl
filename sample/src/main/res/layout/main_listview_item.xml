@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:padding="6dp">
+
+    <LinearLayout
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        <TextView
+                android:id="@+id/obd_parameter"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Some Phenomena:"/>
+
+        <TextView
+                android:id="@+id/obd_value"
+                android:gravity="right|center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Some Value"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
