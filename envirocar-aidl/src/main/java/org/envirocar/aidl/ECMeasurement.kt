@@ -28,6 +28,12 @@ data class ECMeasurement(
         parcel.writeDouble(latitude)
         parcel.writeDouble(longitude)
         parcel.writeLong(time)
+
+        parcel.writeInt(properties.size)
+        for(entry in properties.entries){
+            parcel.writeString(entry.key)
+            parcel.writeString(entry.value)
+        }
     }
 
     override fun describeContents(): Int {
