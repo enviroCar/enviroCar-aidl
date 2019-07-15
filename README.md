@@ -1,13 +1,13 @@
 # enviroCar-aidl
 An AIDL interface for enviroCar which allows the access to the recorded measurement and raw OBD-II data of the enviroCar app by other apps.
 
-Currently, the app supports the following features:
+Currently, this interface supports the following features:
 
 * Information about the OBD connection state
 * Getting the latest raw OBD-II value for a specific phenomenon (e.g. Speed, RPM)
 * Getting the latest recorded measurement (aggregated with different recorded phenomenons; usually refreshes all 5 seconds)
 
-
+The sample folder contains an example Android app that requests every 5 seconds the aidl inteface for the latest measurements. 
 
 ## Download
 The enviroCar-aidl library can be integrated via a jitpack dependency. 
