@@ -1,6 +1,28 @@
 # enviroCar-aidl
 AIDL interface for enviroCar 
 
+## Download
+The enviroCar-aidl library can be integrated via a jitpack dependency. 
+
+Add in your root build.gradle (preferred at the end of the repositories section) the following snippit:
+
+```
+   allprojects {
+      repositories {
+         ...
+         maven { url 'https://jitpack.io' }
+      }  
+   }
+```
+
+and then add the following dependency:
+
+```
+   dependencies {
+      implementation 'com.github.enviroCar:enviroCar-aidl:d67cfa49f3'
+   }
+```
+
 
 License
 =======
